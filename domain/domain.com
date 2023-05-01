@@ -1,7 +1,7 @@
 server {
     listen 7081;
-    location /sayhello {
+    location /hello {
         default_type text/plain;
-          proxy_pass http://backend
+          proxy_pass http://realweb;
     }
 }
